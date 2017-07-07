@@ -56,9 +56,15 @@ Page({
         markers: markers,
         controls: [{
           id: 1,
-          iconPath: '/resources/icon-index.png',
+          iconPath: '/resources/icon-map-back.png',
           position: { left: 20, top: 20 },
-          clickable: true
+          clickable: true,
+          callout: {
+            content: '123',
+            borderRadius: 3,
+            color: '#fff',
+            boxShadow: '0 3px 6px rgba(0,0,0,.3)',
+          }
         }]
       })) : wx.showModal({ title: '没有数据' })
     } else {
@@ -101,7 +107,7 @@ Page({
         content: '<text class="map-callout">' + options.name + (sub ? "" : "(" + len.toString() + ")") + '</text>',
         borderRadius: 3,
         color: '#fff',
-        bgColor: sub ? '#339933' : '#09f',
+        bgColor: sub ? '#339933' : '#0099ff',
         boxShadow: '0 3px 6px rgba(0,0,0,.3)',
       }
     }
