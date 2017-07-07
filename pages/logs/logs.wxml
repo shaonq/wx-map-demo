@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-panel">
+      <view class="weui-panel__hd">作者：shaonq@qq.com</view>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__desc">
+            <scroll-view scroll-y style="height:300px;width: 100vw">
+              <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+                <view style="padding:3px 0">
+                  <text class="log-item">{{index + 1}}. {{log}}</text>
+                </view>
+              </block>
+            </scroll-view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="time">
+    <text> {{time}}</text>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "地图组件",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "/resources/icon-index-active.png",
+        "iconPath": "/resources/icon-index.png",
+        "pagePath": "pages/index/index",
+        "text": "地图"
+      },
+      {
+        "selectedIconPath": "/resources/icon-log-active.png",
+        "iconPath": "/resources/icon-log.png",
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
+    ]
+  }
+}
